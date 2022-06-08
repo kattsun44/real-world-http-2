@@ -1,0 +1,7 @@
+version: "3"
+services:
+  app: # Service name
+    build: . # Place of Dockerfile for build
+    tty: true # Container Persistence
+    volumes:
+      - ./app:/go/src/app # Mount directory
